@@ -2,8 +2,8 @@ from fastapi import FastAPI, Query, Path
 from fastapi.responses import JSONResponse
 from typing import Optional, List
 from bson import ObjectId, Regex
-from backend_task.database import product_collection, order_collection, serialize_mongo_doc
-from backend_task.models import ProductCreate, ProductResponse, OrderCreate, OrderResponse
+from database import product_collection, order_collection, serialize_mongo_doc
+from models import ProductCreate, ProductResponse, OrderCreate, OrderResponse
 
 app = FastAPI(title="HROne Backend Task")
 
