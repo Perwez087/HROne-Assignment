@@ -7,7 +7,7 @@ import { createDefaultField } from "../utils/createDefaultField";
 import { generateJsonPreview } from "../utils/generateJson";
 import JSONPreview from "../JSONPreview";
 
-const { Title, Paragraph } = Typography;
+const { Title} = Typography;
 const { Header, Content } = Layout;
 const { useBreakpoint } = Grid;
 
@@ -68,7 +68,7 @@ const SchemaBuilder: React.FC = () => {
 
   const handleDelete = (id: string) => setSchema(deleteField(id));
 
-  const renderFields = (fields: SchemaField[], parentId?: string) =>
+  const renderFields = (fields: SchemaField[]) =>
     fields.map((field) => (
       <FieldItem
         key={field.id}
