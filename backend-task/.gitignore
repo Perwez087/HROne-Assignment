@@ -20,3 +20,4 @@ venv/
 
 # Log files
 *.log
+.vercel
